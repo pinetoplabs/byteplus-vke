@@ -1,0 +1,45 @@
+{
+  "name": "byteplus-vke",
+  "version": "1.0.0",
+  "description": "BytePlus VKE Infrastructure Setup using TypeScript",
+  "main": "dist/byteplus-vke-setup.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/byteplus-vke-setup.js",
+    "dev": "ts-node src/byteplus-vke-setup.ts",
+    "setup:dev": "npm run build && ENVIRONMENT=dev node dist/byteplus-vke-setup.js",
+    "setup:stage": "npm run build && ENVIRONMENT=stage node dist/byteplus-vke-setup.js",
+    "setup:prod": "npm run build && ENVIRONMENT=prod node dist/byteplus-vke-setup.js",
+    "clean": "rm -rf dist",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [
+    "byteplus",
+    "vke",
+    "kubernetes",
+    "infrastructure",
+    "typescript"
+  ],
+  "author": "Onion Lim",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.34.1",
+    "@typescript-eslint/parser": "^8.34.1",
+    "eslint": "^9.29.0",
+    "jest": "^30.0.1",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "pnpm@10.12.1"
+}

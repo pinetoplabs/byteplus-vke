@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+*.log
+kubeconfig-*
+infrastructure-details.json
+.DS_Store
+# PNPM
+pnpm-lock.yaml
+# Cred
+cred/index.js
+cred/index.ts
