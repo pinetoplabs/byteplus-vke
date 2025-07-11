@@ -9,4 +9,6 @@ infrastructure-details.json
 pnpm-lock.yaml
 # Cred
 cred/index.js
+cred/index.*.js
 cred/index.ts
+cred/index.*.ts
